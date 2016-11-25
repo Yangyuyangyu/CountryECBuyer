@@ -1,0 +1,2 @@
+include ':app', 'photoview', ':IMKit'
+project(':photoview').projectDir = new File('ThirdLibrary/photoview')

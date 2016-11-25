@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.countryecbuyer.activity.shopcart.shopCartActivity">
+
+    <include layout="@layout/my_top_actionbar" />
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/activity_shop_cart_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/lineStyle" />
+
+    <LinearLayout
+        android:id="@+id/activity_shop_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/activity_shop_cart_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/checkbox_shopcart_selector"
+            android:padding="10dp"
+            android:textColor="@color/three"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/activity_shop_cart_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/red_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_shop_cart_totalPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="合计: 0元"
+            android:textColor="@color/red_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/activity_shop_cart_clearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_red_selector"
+            android:minHeight="30dp"
+            android:minWidth="65dp"
+            android:text="结算(0)"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

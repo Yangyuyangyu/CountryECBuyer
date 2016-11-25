@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_addr_city">
+        <item>选择城市</item>
+    </string-array>
+    <string-array name="test_addr_area">
+        <item>选择地区</item>
+    </string-array>
+</resources>

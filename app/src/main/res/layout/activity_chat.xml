@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_gray_selector"
+        android:text="连接服务器" />
+
+    <Button
+        android:id="@+id/main_getToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_gray_selector"
+        android:text="获取Token" />
+
+    <Button
+        android:id="@+id/main_conversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_gray_selector"
+        android:text="会话界面" />
+
+    <Button
+        android:id="@+id/main_conversationlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_gray_selector"
+        android:text="会话列表" />
+
+    <Button
+        android:id="@+id/main_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_gray_selector"
+        android:text="刷新头像" />
+
+
+</LinearLayout>

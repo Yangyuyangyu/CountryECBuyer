@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="选择优惠"
+        android:textColor="@color/three"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/bs_youhui_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_delete_gray" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_below="@id/bs_youhui_cancel" />
+
+    <EditText
+        android:id="@+id/bs_youhui_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bs_youhui_cancel"
+        android:background="@null"
+        android:hint="请输入优惠码"
+        android:minWidth="250dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="15dp"
+        android:singleLine="true"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_below="@id/bs_youhui_code" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/bs_youhui_code"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_gray_selector"
+        android:minHeight="35dp"
+        android:minWidth="70dp"
+        android:text="兑换" />
+
+    <Button
+        android:id="@+id/me_setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bs_youhui_code"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_green_selector"
+        android:minHeight="40dp"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/me_setting_exit" />
+</RelativeLayout>

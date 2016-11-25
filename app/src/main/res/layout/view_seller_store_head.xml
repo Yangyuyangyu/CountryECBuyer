@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/view_head_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/gradient_color_shop" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_test_bg"
+            app:border_color="#fff"
+            app:border_width="2dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/view_head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_head_framelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="一幅堂茗茶旗舰店"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/view_head_bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/view_head_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_green_selector"
+            android:minWidth="70dp"
+            android:text="+关注"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/view_head_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_red_frame"
+            android:minWidth="70dp"
+            android:text="分享"
+            android:textColor="@color/red_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_head_bottomLL"
+        android:layout_below="@id/view_head_name"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/view_head_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_green_check"
+            android:gravity="center"
+            android:text="企业认证"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/view_head_text_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_green_check"
+            android:gravity="center"
+            android:text="担保交易"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/view_head_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_green_check"
+            android:gravity="center"
+            android:text="线下门店"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

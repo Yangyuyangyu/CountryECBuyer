@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.countryecbuyer.activity.DetailGoodsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/detail_goods_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="@color/three"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/detail_goods_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_toolbar_point" />
+
+        <ImageView
+            android:id="@+id/detail_goods_shopCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/detail_goods_pop"
+            android:padding="10dp"
+            android:src="@drawable/icon_cart" />
+    </RelativeLayout>
+
+    <com.flipboard.bottomsheet.BottomSheetLayout
+        android:id="@+id/detail_goods_bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/transparent" />
+
+            <WebView
+                android:id="@+id/detail_goods_web"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_goods_kefu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableTop="@drawable/icon_kefu_n"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="客服"
+                    android:textColor="@color/gray_btn_bg_color"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_btn_bg_color" />
+
+                <TextView
+                    android:id="@+id/detail_goods_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableTop="@drawable/icon_shop"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="店铺"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_btn_bg_color" />
+
+                <TextView
+                    android:id="@+id/detail_goods_collect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableTop="@drawable/icon_collect_n"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="收藏"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/detail_goods_joinCart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/holo_orange_light"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/detail_goods_buyNow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/red_color"
+                    android:gravity="center"
+                    android:text="立即购买"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.flipboard.bottomsheet.BottomSheetLayout>
+
+</LinearLayout>

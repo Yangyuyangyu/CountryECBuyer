@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <CheckBox
+        android:id="@+id/item_shopcart_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/checkbox_shopcart_selector"
+        android:padding="10dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/item_shopcart_item_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/item_shopcart_item_checkbox"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_test_bg" />
+
+    <TextView
+        android:id="@+id/item_shopcart_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="￥ 79.00"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_shopcart_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/item_shopcart_item_price"
+        android:layout_toRightOf="@id/item_shopcart_item_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="阿斯达阿斯达阿斯达阿斯达周星驰阿斯达阿斯达阿斯达阿斯达现场"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_shopcart_item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_shopcart_item_img"
+        android:layout_toLeftOf="@id/item_shopcart_item_price"
+        android:layout_toRightOf="@id/item_shopcart_item_img"
+        android:singleLine="true"
+        android:text="苹果黑色、副标题123 阿斯达的撒的阿萨德撒打"
+        android:textColor="@color/gray_btn_bg_pressed_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_shopcart_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_shopcart_item_price"
+        android:layout_marginRight="5dp"
+        android:text="×1"
+        android:textColor="@color/three"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/plus_minus_view"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_shopcart_item_price" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="店铺:买买买提旗舰店"
+                android:textColor="@color/three"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买家付款状态"
+                android:textColor="@color/red_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="订单编号: E20160630153445098567526A"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/item_order_card_midRe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/page_backgroup">
+
+            <ImageView
+                android:id="@+id/item_order_card_img"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_test_bg" />
+
+            <TextView
+                android:id="@+id/item_order_card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="￥29.80"
+                android:textColor="@color/three"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_order_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/item_order_card_price"
+                android:layout_marginRight="10dp"
+                android:text="×1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_order_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/item_order_card_price"
+                android:layout_toRightOf="@id/item_order_card_img"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="【买一送一买二送茶杯买三送妹子】弗兰西斯麦麦麦啊麦西斯麦麦麦啊阿萨德按时大大撒阿萨德"
+                android:textColor="@color/three"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/item_order_card_title"
+                android:layout_below="@id/item_order_card_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/item_order_card_img"
+                android:text="80g 花草茶" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:　"
+                android:textColor="@color/three"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="￥:29.80"
+                android:textColor="@color/red_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/item_order_card_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_gray_selector"
+                android:minHeight="23dp"
+                android:minWidth="60dp"
+                android:text="取消"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/item_order_card_comfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_red_bg"
+                android:minHeight="23dp"
+                android:minWidth="60dp"
+                android:text="付款"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

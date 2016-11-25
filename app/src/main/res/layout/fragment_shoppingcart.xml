@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/shopping_cart_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="@color/three"
+        android:textSize="18sp" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_below="@id/shopping_cart_top" />
+
+    <include
+        android:id="@+id/shopping_cart_foot"
+        layout="@layout/a_shop_foot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true" />
+
+    <com.countryecbuyer.view.AutoSwipeRefreshLayout
+        android:id="@+id/shopping_cart_swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/shopping_cart_foot"
+        android:layout_below="@id/shopping_cart_top"
+        android:layout_marginTop="1dp">
+
+        <ExpandableListView
+            android:id="@+id/shopping_cart_expandListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:footerDividersEnabled="false"
+            android:groupIndicator="@null"
+            android:visibility="invisible" />
+
+    </com.countryecbuyer.view.AutoSwipeRefreshLayout>
+
+    <include layout="@layout/layout_empty_goods" />
+</RelativeLayout>

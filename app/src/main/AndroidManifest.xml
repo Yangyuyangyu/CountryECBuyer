@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.countryecbuyer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 聊天界面 -->
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 会话列表界面 -->
+        <activity
+            android:name=".chat.ConversationListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.countryecbuyer"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 聚合会话界面 -->
+        <activity
+            android:name=".chat.SubConversationListActivtiy"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.countryecbuyer"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 会话界面 -->
+        <activity
+            android:name=".chat.ConversationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.countryecbuyer"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 个人设置 -->
+        <activity
+            android:name=".activity.me.meSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- 卖家店铺 -->
+        <activity
+            android:name=".activity.main.SellerStoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 商品详情页 -->
+        <activity
+            android:name=".activity.DetailGoodsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 消息推送中心 -->
+        <activity
+            android:name=".activity.msg.PushMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 精彩回顾 -->
+        <activity
+            android:name=".activity.WonderfulReviewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".activity.search.SearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 个人信息 -->
+        <activity
+            android:name=".activity.PersonalInformationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 订单 -->
+        <activity
+            android:name=".activity.me.OrderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 已完成订单 -->
+        <activity
+            android:name=".activity.me.OrderCompleteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 我收藏的商品 -->
+        <activity
+            android:name=".activity.me.meCollectActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 我关注的店铺 -->
+        <activity
+            android:name=".activity.me.meAttentionShopActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 我购买过 -->
+        <activity
+            android:name=".activity.me.meHaveBuyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 浏览记录 -->
+        <activity
+            android:name=".activity.me.meBrowsingHistoryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 优惠券 -->
+        <activity
+            android:name=".activity.me.meYouHuiTicketActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 返现 -->
+        <activity
+            android:name=".activity.me.meCashBackActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 帮助与反馈 -->
+        <activity
+            android:name=".activity.me.meHelpFeedbackActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 昵称修改 -->
+        <activity
+            android:name=".activity.personalInfo.nickNameActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 性别修改 -->
+        <activity
+            android:name=".activity.personalInfo.sexSettingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 收货地址 -->
+        <activity
+            android:name=".activity.personalInfo.receiverAddressActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".activity.personalInfo.passwordChangeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 商家入驻 -->
+        <activity
+            android:name=".activity.me.RecruitmentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 首页列表Item展示页 -->
+        <activity
+            android:name=".activity.main.mainItemActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 收货地址详情 -->
+        <activity
+            android:name=".activity.receive_address.ReceiveAddrDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 新消息通知 -->
+        <activity
+            android:name=".activity.setting.newsNotifyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.setting.aboutUsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 购物车activity -->
+        <activity
+            android:name=".activity.shopcart.shopCartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 立即购买后跳转订单 待支付界面 -->
+        <activity
+            android:name=".activity.order.order_PayActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!-- 微信客服端回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!--忘记密码-->
+        <activity
+            android:name=".activity.login.ForgetPasswordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <!--用户注册-->
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

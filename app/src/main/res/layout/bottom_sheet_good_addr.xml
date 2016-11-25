@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bs_test_goods_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="选择收货地址"
+            android:textColor="@color/three"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/bs_goods_addr_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_delete_gray" />
+
+        <View
+            style="@style/lineStyle"
+            android:layout_below="@id/bs_goods_addr_cancel" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bs_goods_addr_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bs_goods_addr_cancel"
+            android:layout_margin="10dp"
+            android:background="@android:color/white" />
+
+
+        <View
+            style="@style/lineStyle"
+            android:layout_below="@id/bs_goods_addr_recyclerView" />
+
+        <LinearLayout
+            android:id="@+id/item_goods_addr_newLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bs_goods_addr_recyclerView"
+            android:gravity="center_vertical"
+            android:minHeight="45dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_new_plus" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="新增地址" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_next_gray" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_below="@id/item_goods_addr_newLL" />
+    </RelativeLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

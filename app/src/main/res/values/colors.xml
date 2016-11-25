@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray_bg">#F5F5F5</color>
+    <color name="gray_deep">#F5F5F5</color>
+    <color name="green">@android:color/holo_green_light</color>
+    <color name="line">#B6B6B6</color>
+    <color name="red_color">#F44336</color>
+    <color name="liuliuliu">#727272</color>
+    <color name="three">#212121</color>
+    <color name="blue">#4F7AF8</color>
+    <color name="yellow_deep">#F57C00</color>
+
+    <!--这种标题字体颜色很不错-->
+    <color name="title_black">#212121</color>
+    <color name="item_bg">#F5F5F5</color>
+    <color name="orange_bg">#F57C00</color>
+
+
+    <!--刷新颜色-->
+    <color name="swipe_color_1">#FF6864</color>
+    <color name="swipe_color_2">#FF6864</color>
+    <color name="swipe_color_3">#FF6864</color>
+    <color name="swipe_color_4">#FF6864</color>
+    <color name="swipe_background_color">#ffffff</color>
+
+    <!--sweet_alert_dialog-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+
+    <!--购物车-->
+    <color name="page_backgroup">#f2f2f2</color>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/bs_cart_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_test_bg" />
+
+        <ImageView
+            android:id="@+id/bs_cart_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_delete_gray" />
+
+        <TextView
+            android:id="@+id/bs_cart_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/bs_cart_img"
+            android:layout_toLeftOf="@id/bs_cart_cancel"
+            android:layout_toRightOf="@id/bs_cart_img"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="【买一送一】送花茶送茶杯送送送买买买买买买买买买买买买买买"
+            android:textColor="@color/three"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bs_cart_img"
+            android:layout_toRightOf="@id/bs_cart_img"
+            android:padding="5dp"
+            android:text="￥ 29.80"
+            android:textColor="@color/red_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="净含量:"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/cart_btn_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:minWidth="55dp"
+        android:text="80g"
+        android:textColor="@drawable/cart_text_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="种类:"
+        android:textColor="@color/three"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/cart_btn_selector"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:minWidth="55dp"
+        android:text="花草茶"
+        android:textColor="@drawable/cart_text_selector"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="购买数量:"
+            android:textColor="@color/three"
+            android:textSize="14sp" />
+
+        <include
+            layout="@layout/plus_minus_view"
+            android:layout_width="75dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="剩余232323件"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家备注:"
+            android:textColor="@color/three"
+            android:textSize="14sp" />
+
+        <com.countryecbuyer.view.ClearEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:text="阿迪达斯打阿迪达迪达斯打阿迪达斯打斯打阿迪达斯打阿迪达斯打斯打阿迪达斯打"
+            android:textColor="@color/three"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/lineStyle" />
+
+    <Button
+        android:id="@+id/bs_cart_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_red_selector"
+        android:minHeight="40dp"
+        android:text="加入购物车"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>

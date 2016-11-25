@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receive_addr_bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.countryecbuyer.activity.receive_address.ReceiveAddrDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/my_top_actionbar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="收货人　"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:text="洋芋ads"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="联系电话"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@null"
+                android:hint="联系电话"
+                android:text="18281603333"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="选择地区"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/receive_addr_province"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="选择省份"
+                    android:singleLine="true"
+                    android:textColor="@color/three"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/receive_addr_city"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="选择城市"
+                    android:singleLine="true"
+                    android:textColor="@color/three"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/receive_addr_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="选择地区"
+                    android:singleLine="true"
+                    android:textColor="@color/three"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="详细地址"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@null"
+                android:hint="街道门牌信息"
+                android:text="果壳里2号"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="邮政编码"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@null"
+                android:hint="邮政编码(选填)"
+                android:textColor="@color/three"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="保存"
+            android:textColor="@color/material_deep_teal_20"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/receive_addr_delete_line"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray_bg" />
+
+        <TextView
+            android:id="@+id/receive_addr_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="删除"
+            android:textColor="@color/red_color"
+            android:textSize="16sp" />
+
+        <View style="@style/lineStyle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray_bg" />
+
+        <Button
+            android:id="@+id/receive_addr_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_red_selector"
+            android:minHeight="40dp"
+            android:text="　设为默认收货地址　"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

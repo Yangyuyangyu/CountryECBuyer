@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/seller_store_bottomSheetLayout"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.countryecbuyer.activity.main.SellerStoreActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/my_top_actionbar" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/seller_store_swipeRefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.countryecbuyer.view.MyScrollView
+            android:id="@+id/seller_store_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_seller_store_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/seller_store_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <include layout="@layout/view_seller_store_foot" />
+            </LinearLayout>
+        </com.countryecbuyer.view.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

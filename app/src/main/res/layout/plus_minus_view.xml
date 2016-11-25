@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plus_minus_viewLL"
+    android:layout_width="75dp"
+    android:layout_height="20dp"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/rounded_black_bg"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_reduce"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_angle_gray"
+        android:gravity="center"
+        android:text="—"
+        android:textColor="@color/three"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_angle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/three"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_angle_right"
+        android:gravity="center"
+        android:text="＋"
+        android:textColor="@color/three"
+        android:textSize="12sp" />
+</LinearLayout>

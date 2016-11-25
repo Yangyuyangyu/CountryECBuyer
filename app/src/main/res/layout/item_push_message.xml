@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_push_msg_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_red_bg" />
+
+        <TextView
+            android:id="@+id/item_push_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_push_msg_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_push_msg_img"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="新晋人气美妆放暑价，美爆一夏天"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_push_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/item_push_msg_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/item_push_msg_img"
+            android:text="营销活动"
+            android:textColor="@color/three"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_push_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_push_msg_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="今天"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
